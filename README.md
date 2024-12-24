@@ -10,6 +10,9 @@
 - **Token Embeddings:**  
   The input tokens (words or subwords) are transformed into dense vectors that capture their semantic meanings. <br />
   The input embeddings are projected into three spaces using learned weight matrices.
+  - Query (Q): What we’re trying to understand (a vector for each token).
+  - Key (K): Encodes the importance or "features" of all tokens for comparison.
+  - Value (V): The information we want to aggregate or transform (associated with K).
 - **Positional Encoding:**  
   Since the Transformer does not inherently model sequence order, positional encoding is added to the embeddings to encode the order of the tokens.
 
@@ -51,6 +54,8 @@ $`\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)
 
 - $`(Q, K, V)`$: Learned projections of the input.
 - $`d_k`$: Dimensionality of the key vectors.
+  
+This similarity measures "how much one token should focus on another."
 
 ---
 
