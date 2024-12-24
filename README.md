@@ -1,13 +1,15 @@
 # Transformer
 
 ## Architecture Overview
-![image](https://github.com/user-attachments/assets/1fe551ec-0135-47c5-9f26-0184360c31e6)<sub>(The  encoder-decoder structure of the Transformer architecture, taken from “Attention Is All You Need“)</sub>
+![image](https://github.com/user-attachments/assets/1fe551ec-0135-47c5-9f26-0184360c31e6) <br />
+<sub>The  encoder-decoder structure of the Transformer architecture, taken from “Attention Is All You Need“</sub>
 
 ---
 
 ### 1. **Input Representation**
 - **Token Embeddings:**  
-  The input tokens (words or subwords) are transformed into dense vectors that capture their semantic meanings.  
+  The input tokens (words or subwords) are transformed into dense vectors that capture their semantic meanings. <br />
+  The input embeddings are projected into three spaces using learned weight matrices.
 - **Positional Encoding:**  
   Since the Transformer does not inherently model sequence order, positional encoding is added to the embeddings to encode the order of the tokens.
 
@@ -45,12 +47,10 @@ Similar to the encoder, the decoder also consists of **N identical layers** but 
 ### 4. **Attention Mechanism**
 Attention is a weighted computation based on the similarity between query (\(Q\)) and key (\(K\)) vectors. It is defined as:
 
-\[
-\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
-\]
+$`\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V`$
 
-- \(Q, K, V\): Learned projections of the input.
-- \(d_k\): Dimensionality of the key vectors.
+- $`(Q, K, V)`$: Learned projections of the input.
+- $`d_k`$: Dimensionality of the key vectors.
 
 ---
 
