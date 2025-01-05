@@ -1,6 +1,6 @@
 # Project Overview
 
-This project includes detailed documentation on **Transformer** and **PyTorch**. Click the buttons below to expand each section for more details.
+This project includes detailed documentation on **Transformer** and **PyTorch** along with other ML study logs. Click the buttons below to expand each section for more details.
 
 ---
 
@@ -96,12 +96,23 @@ This architecture forms the backbone of many state-of-the-art natural language p
 <summary>Show PyTorch Details</summary>
 
 ### Overview
-PyTorch is an open-source machine learning framework that accelerates the path from research prototyping to production deployment.
+PyTorch is a library for processing tensors.
 
 #### Key Features:
 1. Dynamic Computation Graphs
 2. GPU Acceleration
 3. Broad library support
 ...
+
+</details>
+
+---
+
+## ML study logs
+<details>
+<summary>Show ML study logs Details</summary>
+
+### Overview
+Coming soon...
 
 </details>
