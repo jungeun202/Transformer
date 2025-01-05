@@ -5,9 +5,8 @@ This project includes detailed documentation on **Transformer** and **PyTorch**.
 ---
 
 ## Transformer
-<button onclick="toggleDetails('transformer-details')">Show Transformer Details</button>
-
-<div id="transformer-details" style="display:none; margin-top: 10px;">
+<details>
+<summary>Show Transformer Details</summary>
   
 ### Architecture Overview
 ![image](https://github.com/user-attachments/assets/1fe551ec-0135-47c5-9f26-0184360c31e6) <br />
@@ -88,12 +87,13 @@ This similarity measures "how much one token should focus on another."
 
 This architecture forms the backbone of many state-of-the-art natural language processing (NLP) models, enabling them to perform a variety of tasks effectively.
 
+</details>
+
 ---
 
 ## PyTorch
-<button onclick="toggleDetails('pytorch-details')">Show PyTorch Details</button>
-
-<div id="pytorch-details" style="display:none; margin-top: 10px;">
+<details>
+<summary>Show PyTorch Details</summary>
 
 ### Overview
 PyTorch is an open-source machine learning framework that accelerates the path from research prototyping to production deployment.
@@ -104,17 +104,4 @@ PyTorch is an open-source machine learning framework that accelerates the path f
 3. Broad library support
 ...
 
-</div>
-
----
-
-<script>
-function toggleDetails(sectionId) {
-  var details = document.getElementById(sectionId);
-  if (details.style.display === "none") {
-    details.style.display = "block";
-  } else {
-    details.style.display = "none";
-  }
-}
-</script>
+</details>
