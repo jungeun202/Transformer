@@ -106,9 +106,10 @@ For example, given the equation $y = a \cdot x + b$, where $a$, $x$, and $b$ are
   - The derivative with respect to $x$ is the transpose of $a$, which is $n \times m$.
   - The derivative with respect to $a$ is the transpose of $x$, which is $p \times n$.
   - The derivative with respect to $b$ is $1$.
+    
 2. Linear Regression
-- Pre
-- Dimension of the weights is number of inputs x number of outputs     
+- The dimension of the weights is number of outputs × number of inputs.
+  
 3. GPU Acceleration
 4. Broad library support
 ...
